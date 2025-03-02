@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
       <header class="header">
@@ -38,7 +39,7 @@
                 <div class="btn-group">
                     <a href="#" class="btn">Hire</a>
                     <a href="#contact" class="btn">Contact</a> 
-                    <a href="https://drive.google.com/file/d/1YQdPUCgK0HSmpIiXYjZwXISjG2Ihctjz/view?usp=sharing" class="btn">Download CV</a> 
+                    <a href="https://drive.google.com/file/d/1eSRVcjw4m5vux2lZucO-w3BMfGHnxLK9/view?usp=drive_link" class="btn">Download CV</a> 
                      
                 </div>
         </div>
@@ -119,27 +120,28 @@
       </section>
 
 <!-- contact me  -->
-      <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="">
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" placeholder="Full name">
-                    <input type="email" placeholder="Email">
-                </div>
-                <div class="input-box">
-                    <input type="number" placeholder="Phone Number">
-                    <input type="text" placeholder="Subject">
-                </div>
+    <form id="contact-form">
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text" id="name" name="name" placeholder="Full Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
             </div>
+            <div class="input-box">
+                <input type="number" id="phone" name="phone" placeholder="Phone Number" required>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+        </div>
 
-            <div class="input-group-2">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Massage"></textarea>
-                <input type="Submit" value="send Massage" class="btn">
-            </div>
-        </form>
-      </section>
+        <div class="input-group-2">
+            <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </div>
+    </form>
+</section>
+
 
 <!-- footer -->
       <footer class="footer">
